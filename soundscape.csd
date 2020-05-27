@@ -9,6 +9,7 @@ ksmps = 32
 nchnls = 2
 0dbfs = 1
 
+;start python interpreter
 pyinit
 
 ; Python script to define probabilities for each note as lists within a list
@@ -16,6 +17,7 @@ pyinit
 ; note based on the probabilities of each note occuring.
 ; Each note list must total 1, or there will be problems!
 
+;this command executes the python at init time
 pyruni {{
 c = [0.1, 0.2, 0.05, 0.4, 0.25]
 d = [0.4, 0.1, 0.1, 0.2, 0.2]
